@@ -779,7 +779,7 @@ function getVLESSConfig(userID, hostName) {
     const vlessTlsLink = `vless://${userID}\u0040${bestCFIP}:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%2F%3Fed%3D2560#Leslie-Workers/Pages-TLS`
     return `
 
-Below is the node information and node sharing link for non-TLS ports. You can use the non-TLS ports supported by Cloudflare:
+𝘽𝙚𝙡𝙤𝙬 𝙞𝙨 𝙩𝙝𝙚 𝙣𝙤𝙙𝙚 𝙞𝙣𝙛𝙤𝙧𝙢𝙖𝙩𝙞𝙤𝙣 𝙖𝙣𝙙 𝙣𝙤𝙙𝙚 𝙨𝙝𝙖𝙧𝙞𝙣𝙜 𝙡𝙞𝙣𝙠 𝙛𝙤𝙧 𝙣𝙤𝙣-𝙏𝙇𝙎 𝙥𝙤𝙧𝙩𝙨. 𝙔𝙤𝙪 𝙘𝙖𝙣 𝙪𝙨𝙚 𝙩𝙝𝙚 𝙣𝙤𝙣-𝙏𝙇𝙎 𝙥𝙤𝙧𝙩𝙨 𝙨𝙪𝙥𝙥𝙤𝙧𝙩𝙚𝙙 𝙗𝙮 𝘾𝙡𝙤𝙪𝙙𝙛𝙡𝙖𝙧𝙚:
 
 Address：${hostName} 
 Port：443 
