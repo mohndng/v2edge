@@ -5,7 +5,7 @@ import { connect } from 'cloudflare:sockets';
 let userID = '8820e16b-fbc2-49d3-90e4-eeeb8301c83c';
 
 // 生成配置文件的 Cloudflare 优选 IP (www.gov.se   speed.cloudflare.com等使用Cloudflare CDN的网站也可以)
-const bestCFIP = "www.visa.com.hk"
+const bestCFIP = "www.globe.com.ph"
 
 // 用于 Cloudflare 网站的代理 IP
 const proxyIPs = ["45.32.25.171"]; // （https://github.com/HappyLeslieAlexander/Cloudflare_VLESS/blob/main/proxyip.txt 中的地址也可以）
