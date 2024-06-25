@@ -778,52 +778,27 @@ function getVLESSConfig(userID, hostName) {
     const vlessLink = `vless://${userID}\u0040${bestCFIP}:80?encryption=none&security=none&fp=randomized&type=ws&host=${hostName}&path=%2F%3Fed%3D2560#Leslie-Workers/Pages`
     const vlessTlsLink = `vless://${userID}\u0040${bestCFIP}:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%2F%3Fed%3D2560#Leslie-Workers/Pages-TLS`
     return `
-下面是非 TLS 端口的节点信息及节点分享链接，可使用 Cloudflare 支持的非 TLS 端口：
-
-地址：${hostName} 或 Cloudflare 优选 IP
-端口：80 或 Cloudflare 支持的非 TLS 端口
-UUID：${userID}
-传输：ws
-伪装域名：${hostName}
-路径：/?ed=2048
 
 ${vlessLink}
 
-下面是 TLS 端口的节点信息及节点分享链接，可使用 Cloudflare 支持的 TLS 端口：
+Below is the node information and node sharing link for non-TLS ports. You can use the non-TLS ports supported by Cloudflare:
 
-地址：${hostName} 或 Cloudflare 优选 IP
-端口：443 或 Cloudflare 支持的 TLS 端口
+Address：${hostName} 
+Port：443 
 UUID：${userID}
-传输：ws
-传输层安全：TLS
-伪装域名：${hostName}
-路径：/?ed=2048
-SNI 域名：${hostName}
+Protocol：ws
+Transport Layer Security：TLS
+CNAME：${hostName}
+Path：/?ed=2048
+SNI Domain：${hostName}
 
 ${vlessTlsLink}
 
-Base64 通用节点订阅链接：https://${hostName}/${userID}/base64
-Clash 配置文件订阅链接：https://${hostName}/${userID}/clash
-Sing-box 配置文件订阅链接：https://${hostName}/${userID}/sb
 
-提示：部分地区有 Cloudflare 默认域名被污染的情况，除非打开客户端的 TLS 分片功能，否则无法使用 TLS 端口的节点
-如为 Pages 部署的节点则只能使用 TLS 端口的节点
+Note: In some areas, Cloudflare's default domain name is polluted. Unless you turn on the TLS fragmentation function on the client, you cannot use the node of the TLS port. If the node is deployed for Pages, only nodes with TLS ports can be used.
 ---------------------------------------------------------------
-捐赠
-加密货币
-TRON
-TY7n1xwiHCBqcQqGH1cxjTQqZTuTXbzB4S
-Ethereum
-0xed57e7237e88cec19d3fd12a0d26bacb1dcc247b
-Polygon
-0xed57e7237e88cec19d3fd12a0d26bacb1dcc247b
-TON
-UQC4r4gxAIbOTEEZGG-C1Ffn9inRo24J7qw3U0dFfaIfKyFr
+
 ---------------------------------------------------------------
-联系
-Telegram: https://t.me/Depressed_LeslieAlexander/
-E-mail: https://github.com/HappyLeslieAlexander/
-项目地址: https://github.com/HappyLeslieAlexander/Cloudflare_VLESS/
 By Monarch
 `;
 }
